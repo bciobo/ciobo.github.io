@@ -13,3 +13,6 @@
 *.iml
 out
 gen
+node_modules
+.cache
+public
