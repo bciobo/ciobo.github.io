@@ -33,7 +33,9 @@ const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       </a>
       .
     </p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/page-2/">
+      <button className={'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 2</button>
+    </Link>
     <Link to="/page-3/">Go to page 3</Link>
   </Layout>
 );
