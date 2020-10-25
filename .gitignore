@@ -16,3 +16,4 @@ gen
 node_modules
 .cache
 public
+src/font_families
