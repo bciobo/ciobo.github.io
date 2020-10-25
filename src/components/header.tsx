@@ -5,10 +5,7 @@ type HeaderProps = { siteTitle: string };
 
 const Header: React.FC<HeaderProps> = ({siteTitle}) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className={'bg-blue-morning'}
   >
     <div
       style={{
@@ -20,10 +17,7 @@ const Header: React.FC<HeaderProps> = ({siteTitle}) => (
       <h1 style={{margin: 0}}>
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className={'text-apricot'}
         >
           {siteTitle}
         </Link>

@@ -58,10 +58,10 @@ strong {
   font-weight: bolder;
 }
 em {
-  font-family: "Cardo Italic", serif;
+  font-family: "Judson Italic", serif;
 }
 dfn {
-  font-family: "Cardo Italic", serif;
+  font-family: "Judson Italic", serif;
   font-style: italic;
 }
 h1 {
@@ -204,7 +204,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Cardo Regular', serif;
+  font-family: 'Judson Regular', serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -501,19 +501,19 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
-  font-family: "Cardo Bold", serif;
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 strong {
-  font-family: "Cardo Bold", serif;
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 dt {
-  font-family: "Cardo Bold", serif;
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 th {
-  font-family: "Cardo Bold", serif;
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 li {
@@ -630,6 +630,6 @@ pre tt:after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
+  font-family: 'ArchivoBlack', sans-serif;
+  /*text-transform: uppercase;*/
 }
