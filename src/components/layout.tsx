@@ -24,7 +24,7 @@ const Layout: React.FC = ({children}) => {
   `);
 
   return (
-    <>
+    <div className={'bg-grey-cultured text-grey-independence'}>
       <Header siteTitle={data.site.siteMetadata.title}/>
       <div
         style={{
@@ -32,6 +32,7 @@ const Layout: React.FC = ({children}) => {
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
+        className={'bg-grey-cultured'}
       >
         <main>{children}</main>
         <footer>
@@ -40,7 +41,7 @@ const Layout: React.FC = ({children}) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   );
 };
 

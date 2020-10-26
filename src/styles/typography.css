@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "ArchivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Judson Regular";
+    src: url("../fonts/Judson-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Judson Bold";
+    src: url("../fonts/Judson-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Judson Italic";
+    src: url("../fonts/Judson-Italic.ttf") format('truetype');
+}

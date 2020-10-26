@@ -57,7 +57,11 @@ strong {
   font-weight: inherit;
   font-weight: bolder;
 }
+em {
+  font-family: "Judson Italic", serif;
+}
 dfn {
+  font-family: "Judson Italic", serif;
   font-style: italic;
 }
 h1 {
@@ -200,7 +204,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Judson Regular', serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -497,15 +501,19 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 strong {
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 dt {
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 th {
+  font-family: "Judson Bold", serif;
   font-weight: bold;
 }
 li {
@@ -619,4 +627,9 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ArchivoBlack', sans-serif;
+  /*text-transform: uppercase;*/
 }

@@ -10,10 +10,10 @@ type DataProps = {
   };
 };
 
-const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+const Index: React.FC<PageProps<DataProps>> = ({data, path}) => (
   <Layout>
-    <h1>Gatsby supports TypeScript by default!</h1>
-    <p>
+    <h2 className={'my-2'}>Gatsby supports TypeScript by default!</h2>
+    <p className={'tx-blue-powder'}>
       This means that you can create and write <em>.ts/.tsx</em> files for your
       pages, components etc. Please note that the <em>gatsby-*.js</em> files
       (like gatsby-node.js) currently don't support TypeScript yet.
@@ -34,9 +34,13 @@ const Index: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       .
     </p>
     <Link to="/page-2/">
-      <button className={'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 2</button>
+      <button className={'bg-blue-morning hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 2
+      </button>
     </Link>
-    <Link to="/page-3/">Go to page 3</Link>
+    <Link to="/page-3/">
+      <button className={'bg-blue-powder hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 3
+      </button>
+    </Link>
   </Layout>
 );
 
