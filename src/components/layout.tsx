@@ -9,23 +9,16 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import "./layout.css";
+import { useSiteMetadata } from "../hooks/use-site-metadata";
+// import "./layout.css";
 
 
 const Layout: React.FC = ({children}) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const {title, siteUrl} = useSiteMetadata()
 
   return (
     <div className={'bg-grey-cultured text-grey-independence'}>
-      <Header siteTitle={data.site.siteMetadata.title}/>
+      <Header siteTitle={title}/>
       <div
         style={{
           margin: `0 auto`,
