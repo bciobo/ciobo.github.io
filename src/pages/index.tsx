@@ -9,39 +9,31 @@ type DataProps = {
   };
 };
 
-const Index: React.FC<PageProps<DataProps>> = ({data, path}) => (
-  <Layout>
-    <h2 className={'my-2'}>Gatsby supports TypeScript by default!</h2>
-    <p className={'tx-blue-powder'}>
-      This means that you can create and write <em>.ts/.tsx</em> files for your
-      pages, components etc. Please note that the <em>gatsby-*.js</em> files
-      (like gatsby-node.js) currently don't support TypeScript yet.
-    </p>
-    <p>
-      For type checking you'll want to install <em>typescript</em> via npm and
-      run <em>tsc --init</em> to create a <em>.tsconfig</em> file.
-    </p>
-    <p>
-      You're currently on the page "{path}" which was built on{" "}
-      {data.site.buildTime}.
-    </p>
-    <p>
-      To learn more, head over to our{" "}
-      <a href="https://www.gatsbyjs.org/docs/typescript/">
-        documentation about TypeScript
-      </a>
-      .
-    </p>
-    <Link to="/page-2/">
-      <button className={'bg-blue-morning hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 2
-      </button>
-    </Link>
-    <Link to="/page-3/">
-      <button className={'bg-blue-powder hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 3
-      </button>
-    </Link>
-  </Layout>
-);
+const Index: React.FC<PageProps<DataProps>> = ({data, path}) => {
+  console.log(data);
+  console.log(path);
+  return (
+    <Layout>
+      <h1>This is a big ass title</h1>
+      <h3>This is a normal size subtitle</h3>
+      <h6>This is a tiny subtitle, follwed by a few paragraphs</h6>
+      <p>Spicy jalapeno bacon ipsum dolor amet strip steak mollit tempor, buffalo pork loin quis proident deserunt nisi
+        excepteur. Non ut t-bone eiusmod spare ribs leberkas alcatra pancetta ball tip beef ribs quis. Alcatra irure qui
+        kevin pork belly tongue filet mignon beef ribs turducken sint ipsum pork chop. Shankle pastrami ham burgdoggen
+        duis in tenderloin ut. Lorem short loin laboris, cillum do in consectetur sint cupidatat est flank. Capicola
+        boudin ut ham hock burgdoggen reprehenderit rump filet mignon short loin pork chop kevin. Tenderloin ground
+        round short loin, veniam turkey fugiat reprehenderit et consectetur.</p>
+      <p>Occaecat ham hock in et cupidatat. Spare ribs doner meatball beef laboris enim eiusmod commodo tenderloin
+        aliquip. Jerky turkey nostrud pork belly picanha irure pork loin non hamburger ullamco tri-tip qui. T-bone
+        cupidatat biltong, velit short ribs reprehenderit hamburger chislic laborum.</p>
+      <p>Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+      {/*<Link to="/page-2/">*/}
+      {/*  <button className={'bg-blue-morning hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'}>Go to page 2*/}
+      {/*  </button>*/}
+      {/*</Link>*/}
+    </Layout>
+  )
+};
 
 export default Index;
 

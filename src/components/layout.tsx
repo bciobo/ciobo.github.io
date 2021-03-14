@@ -10,30 +10,27 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
+import Footer from "./footer";
 // import "./layout.css";
 
 
 const Layout: React.FC = ({children}) => {
-  const {title, siteUrl} = useSiteMetadata()
+  const {title, email, twitter, linkedin} = useSiteMetadata()
 
   return (
     <div className={'bg-grey-cultured text-grey-independence'}>
       <Header siteTitle={title}/>
       <div
+        className={'h-screen bg-grey-cultured'}
         style={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
-        className={'bg-grey-cultured'}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer email={email} twitter={twitter} linkedin={linkedin}/>
     </div>
   );
 };

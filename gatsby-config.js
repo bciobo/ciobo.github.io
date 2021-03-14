@@ -1,8 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Dr. Diana Burlacu`,
+    headline: `Dr. Diana Burlacu`,
+    description: `Landing site for my Internet presence. This is where I showcase my work. Find all the ways you can reach out`,
+    name: `Diana Burlacu`,
+    siteUrl: `https://dianaburlacu.com`,
+    email: `diana.burlacu@newcastle.ac.uk`,
+    twitter: `https://twitter.com/dianaeburlacu`,
+    linkedin: `https://www.linkedin.com/in/diana-burlacu-648bb462/`,
+    image: ``,  // TODO: add image
+    logo: ``,  // TODO: add image
+    author: `@bciobo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,9 +36,10 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`
   ],
 };
